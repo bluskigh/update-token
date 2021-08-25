@@ -1,0 +1,4 @@
+### Possible use cases:
+    - Django testing code with Github actions... Instead of manually updating token used for validation user has right permissions in API. Automatically update token being used depending on expiration and or other aspects that invalidate the token. Can take out code that fetches a token and place in separate file, calling that file before ```python3 manage.py test``` is run. Reason, to set environment variable of token from fetch_token() method. Then access via environ package.  
+
+For use with Auth0
